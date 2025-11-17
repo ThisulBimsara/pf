@@ -80,3 +80,29 @@ menuToggle.addEventListener('click', () => {
 });
 
 
+// Mobile Menu Toggle
+const menuToggle = document.getElementById('menu-toggle');
+const slideMenu = document.getElementById('slide-menu');
+
+menuToggle.addEventListener('click', () => {
+    slideMenu.classList.toggle('active');
+});
+
+// Close menu when link is clicked (optional)
+const slideLinks = document.querySelectorAll('#slide-menu ul li a');
+slideLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        slideMenu.classList.remove('active');
+    });
+});
+
+// Dark / Light Mode Toggle
+const themeToggle = document.getElementById('themeToggle');
+themeToggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    if(document.body.classList.contains('dark-mode')){
+        themeToggle.textContent = '☀️';
+    } else {
+        themeToggle.textContent = '🌙';
+    }
+});

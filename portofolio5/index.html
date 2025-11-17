@@ -1,48 +1,51 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Amine | Home</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amine | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  </head>
+  <body>
 
-  <!-- Navbar container -->
-  <div id="navbar-container"></div>
+    <!-- Navbar container -->
+    <div id="navbar-container"></div>
 
-  <!-- Home Section -->
-  <section class="home" id="home">
-    <div class="home-text">
-      <h2>Hello I'm Thisul  👋🏻</h2>
-      <h3>Full-Stack Software Engineer</h3>
-      <p> I craft modern web experiences with a focus on performance, reliability, and clean architecture. I enjoy turning ideas into functional, scalable products through thoughtful engineering.</p>
-      <div class="home-btn">
-        <a href="contact.html" class="btn">Contact Info</a>
-        <a href="WELLAGE THISUL.pdf" class="btn">Download CV <i class="fa-solid fa-download"></i></a>
-      </div>
+    <!-- Home Section -->
+    <section class="home" id="home">
+  <div class="home-text fade-right">
+    <h2>Hello I'm Thisul 👋🏻</h2>
+    <h3>Full-Stack Software Engineer</h3>
+    <p>I craft modern web experiences ...</p>
+
+    <div class="home-btn fade-up">
+      <a href="contact.html" class="btn">Contact Info</a>
+      <a href="WELLAGE THISUL.pdf" class="btn">Download CV <i class="fa-solid fa-download"></i></a>
     </div>
-    <div class="home-img">
-      <!-- <img src="images/img2.webp" alt="Amine"> -->
-    </div>
-  </section>
+  </div>
 
-  <script src="navbar.js"></script>
-  <script src="main.js"></script>
-</body>
-<!-- Footer placeholder -->
-<div id="footer-placeholder"></div>
+  <div class="home-img fade-left">
+    <img src="images/aa.jpg" alt="Amine">
+  </div>
+</section>
 
-<!-- Load footer.html -->
-<script>
-    fetch('footer.html')
-    .then(response => response.text())
-    .then(data => {
-        document.getElementById('footer-placeholder').innerHTML = data;
-    })
-    .catch(err => console.error('Footer load failed', err));
-</script>
-<link rel="stylesheet" href="footer.css">
 
-</html>
+    <script src="navbar.js"></script>
+    <script src="main.js"></script>
+  </body>
+  <!-- Footer placeholder -->
+  <div id="footer-placeholder"></div>
+
+  <!-- Load footer.html -->
+  <script>
+      fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById('footer-placeholder').innerHTML = data;
+      })
+      .catch(err => console.error('Footer load failed', err));
+  </script>
+  <link rel="stylesheet" href="footer.css">
+
+  </html>

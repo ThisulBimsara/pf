@@ -1119,3 +1119,117 @@ body.dark .contact .btn {
 .header-list-icon a i:hover {
     color: var(--active);
 }
+/* Reusable animation classes */
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 0.8s ease-out forwards;
+}
+
+.fade-right {
+  opacity: 0;
+  transform: translateX(-40px);
+  animation: fadeRight 0.8s ease-out forwards;
+}
+
+.fade-left {
+  opacity: 0;
+  transform: translateX(40px);
+  animation: fadeLeft 0.8s ease-out forwards;
+}
+
+/* Keyframes */
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/* ============================
+   BEAUTIFUL PAGE ANIMATIONS
+============================ */
+
+/* Fade Up */
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Fade Left */
+.fade-left {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Fade Right */
+.fade-right {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Zoom In */
+.zoom-in {
+  opacity: 0;
+  transform: scale(0.85);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* When visible */
+.animate {
+  opacity: 1 !important;
+  transform: none !important;
+}
+/* ==========================
+   SCROLL ANIMATIONS
+========================== */
+
+.fade-up,
+.fade-left,
+.fade-right,
+.zoom-in {
+  opacity: 0;
+  transition: all 0.9s ease;
+}
+
+/* Fade Up */
+.fade-up {
+  transform: translateY(30px);
+}
+
+/* Fade Left */
+.fade-left {
+  transform: translateX(-40px);
+}
+
+/* Fade Right */
+.fade-right {
+  transform: translateX(40px);
+}
+
+/* Zoom In */
+.zoom-in {
+  transform: scale(0.85);
+}
+
+/* When Element is Visible */
+.animate {
+  opacity: 1 !important;
+  transform: none !important;
+}

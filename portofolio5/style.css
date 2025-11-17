@@ -829,6 +829,8 @@ body {
 /* General Navbar Styles */
 
 .navbar {
+    padding: 10px 20px;
+    height: auto; /* implicit, but looks like ~60px total */
     display: flex;
     justify-content: space-between;
     align-items: center;

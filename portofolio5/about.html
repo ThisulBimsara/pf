@@ -13,7 +13,7 @@
 <section class="about" id="about">
   <div class="about-info">
     <div class="img-about">
-      <img src="images/img.jpg" alt="My Photo">
+      <img src="images/aa.jpg" alt="My Photo">
     </div>
     <div class="info-text">
       <h5>@Thisul</h5>
@@ -57,7 +57,7 @@
     </div>
 
     <div class="photo-container">
-      <img src="images/img.jpg" alt="My Photo">
+      <img src="images/img.jpeg" alt="My Photo">
       <span class="tape tape1"></span>
       <span class="tape tape2"></span>
     </div>
@@ -68,4 +68,18 @@
   <script src="navbar.js"></script>
   <script src="main.js"></script>
 </body>
+<!-- Footer placeholder -->
+<div id="footer-placeholder"></div>
+
+<!-- Load footer.html -->
+<script>
+    fetch('footer.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+    })
+    .catch(err => console.error('Footer load failed', err));
+</script>
+<link rel="stylesheet" href="footer.css">
+
 </html>
